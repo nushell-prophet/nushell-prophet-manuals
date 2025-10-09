@@ -130,11 +130,15 @@ git commit -m "Initial nushell configuration"
 config env
 ```
 
-If the `$env.EDITOR` variable is not set, add to the file:
+If the `$env.EDITOR` variable is not set, set it by running this command:
 
-`$env.EDITOR = "code"`
+```nu
+$env.EDITOR = "code"
+```
 
-Save and restart nushell:
+Then run `config env` again and add the same line to your `env.nu` file to make it persistent.
+
+Save the file and restart Nushell:
 
 ```nu
 nu
