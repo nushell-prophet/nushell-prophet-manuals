@@ -15,16 +15,20 @@ https://code.visualstudio.com
 Open https://brew.sh, copy the installation command.
 Open Terminal, paste the command, press Enter.
 
-After execution, copy the commands provided by Homebrew (adding to PATH), paste into terminal, execute.
+After execution, copy the commands provided by Homebrew (as shown in the image).
 
-```bash
+<img src="media/brew-post-install.png" width="600" alt="Homebrew post-install commands" style="border: 1px solid white;">
+
+Paste the provided commands into the terminal and execute them.
+
+```
 # Verify the installation
 brew doctor
 ```
 
 ## Installing Nushell
 
-```bash
+```
 # View package information
 brew info nushell
 
@@ -39,13 +43,13 @@ nu
 
 Check the current configuration path:
 
-```nu
+```
 $nu.default-config-dir
 ```
 
 If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths, improves compatibility with terminal quick-select features, and provides other convenience benefits that the author has learned from experience.
 
-```nu
+```
 # Launch nu without saving history (this prevents recreating the config folder during the move)
 nu --no-history
 
@@ -72,7 +76,7 @@ Close the terminal tab and open a new tab with zsh (we need to configure the she
 
 Add the environment variable to zsh configuration (zsh is the default macOS shell, so setting it here ensures it's available when launching Nushell):
 
-```bash
+```
 # Open zsh configuration in VS Code
 code ~/.zshrc
 ```
@@ -83,7 +87,7 @@ In the opened file, add the line:
 
 `export XDG_CONFIG_HOME="$HOME/.config"`
 
-```bash
+```
 # Apply changes
 source ~/.zshrc
 
@@ -91,7 +95,7 @@ source ~/.zshrc
 echo $XDG_CONFIG_HOME
 ```
 
-```nu
+```
 # Launch nushell again
 nu
 
@@ -101,9 +105,13 @@ $nu.default-config-dir
 
 ## Initializing Git Repository
 
-```bash
+```
 # Navigate to configuration directory
 cd ~/.config/
+
+# Set username and email (replace with your own name and email)
+git config --global user.name "Maxim Uvarov"
+git config --global user.email "nushell-prophet-demo@users.noreply.github.com"
 
 # Initialize git
 git init
@@ -113,29 +121,26 @@ git add nushell/config.nu nushell/env.nu
 
 # Create first commit
 git commit -m "Initial nushell configuration"
-
-# Set username and email (replace with your own name and email)
-git config --global user.name "Maxim Uvarov"
-git config --global user.email "nushell-prophet-demo@users.noreply.github.com"
-
-# Edit the author of the last commit
-git commit --amend --reset-author
 ```
 
 ## Basic Settings
 
-```nu
+```
 # Open environment variables file
 config env
 ```
 
-If the `$env.EDITOR` variable is not set, add to the file:
+If the `$env.EDITOR` variable is not set, set it by running this command:
 
-`$env.EDITOR = "code"`
+```
+$env.EDITOR = "code"
+```
 
-Save and restart nushell:
+Then run `config env` again and add the same line to your `env.nu` file to make it persistent.
 
-```nu
+Save the file and restart Nushell:
+
+```
 nu
 
 # Open main configuration file
@@ -147,7 +152,7 @@ config nu
 
 Add history and banner settings:
 
-```nu
+```
 $env.config.history.file_format = "sqlite"
 $env.config.history.max_size = 5_000_000
 $env.config.show_banner = false
@@ -155,7 +160,7 @@ $env.config.show_banner = false
 
 Save the file.
 
-```nu
+```
 # restart nushell
 nu
 
@@ -167,7 +172,7 @@ cd ~/.config/
 
 Commit changes:
 
-```nu
+```
 # See what changed
 git status
 
@@ -181,7 +186,7 @@ git status
 
 We see that history files remain. Create `.gitignore`:
 
-```bash
+```
 # Open .gitignore in editor
 code .gitignore
 ```
@@ -190,7 +195,7 @@ Add the line: `nushell/history*`
 
 Save and commit:
 
-```nu
+```
 # Verify that history files are no longer shown
 git status
 
@@ -201,9 +206,6 @@ git commit -m "Add history files to gitignore"
 
 ## What's Next?
 
-Congratulations! You've successfully set up Nushell with a clean, professional configuration. Your setup now includes:
-- A space-free configuration path for smooth workflow
-- XDG_CONFIG_HOME properly configured
-- Git version control to track and experiment with your configuration safely
+Congratulations! You've successfully set up Nushell with a clean, solid foundation you can build on.
 
 You're now ready to start exploring Nushell's powerful features. Don't hesitate to experiment with your configuration - with Git tracking your changes, you can always revert if something doesn't work as expected. Stay tuned for upcoming manuals that will guide you through your Nushell journey. Happy scripting!
