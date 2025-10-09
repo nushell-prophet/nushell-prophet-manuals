@@ -1,4 +1,4 @@
-# Nushell Prophet Manuals on Nushell
+# Prophet's Guide to Nushell
 
 ## About These Manuals
 
@@ -6,7 +6,7 @@ The best place to start learning Nushell is the official [Nushell Book](https://
 
 These manuals serve a different purpose. Unlike the comprehensive Nushell Book, we focus on practical, platform-specific guidance (currently macOS). We start with installation and setup, then progress to tuning Nushell, demonstrating its use for real work tasks, and showcasing other handy CLI and TUI tools. Each manual includes accompanying video guides and provides detailed, step-by-step instructions for newcomers ("nu-bies") who may find certain setup tasks intimidating.
 
-Many configuration steps that seem obvious to experienced developers can be confusing for beginners. Our goal is to walk you through these steps clearly, providing battle-tested, efficient defaults—though opinionated—so you can get Nushell properly set up and start learning through hands-on experimentation.
+While many configuration steps seem obvious to experienced developers, they can be confusing for beginners. That's why we walk you through each step clearly, providing battle-tested, efficient defaults—though opinionated—so you can get Nushell properly set up and start learning through hands-on experimentation.
 
 ## Manuals
 
