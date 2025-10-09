@@ -15,7 +15,11 @@ https://code.visualstudio.com
 Open https://brew.sh, copy the installation command.
 Open Terminal, paste the command, press Enter.
 
-After execution, copy the commands provided by Homebrew (adding to PATH), paste into terminal, execute.
+After execution, copy the commands provided by Homebrew (as shown in the image).
+
+![](media/brew-post-install.png)
+
+Paste the provided commands into the terminal and execute them.
 
 ```bash
 # Verify the installation
