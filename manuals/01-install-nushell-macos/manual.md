@@ -18,7 +18,7 @@ Open Terminal, paste the command, press Enter.
 After execution, copy the commands provided by Homebrew (adding to PATH), paste into terminal, execute.
 
 ```bash
-# Verify installation correctness
+# Verify the installation
 brew doctor
 ```
 
@@ -43,10 +43,10 @@ Check the current configuration path:
 $nu.default-config-dir
 ```
 
-If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths (which require extra quoting), improves compatibility with terminal quick-select features, and provides other convenience benefits:
+If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths, improves compatibility with terminal quick-select features, and provides other convenience benefits that the author has learned from experience.
 
 ```nu
-# Launch nu without saving history (prevents recreating the config folder during the move)
+# Launch nu without saving history (this prevents recreating the config folder during the move)
 nu --no-history
 
 # Create .config directory
@@ -66,7 +66,7 @@ ln -s ~/.config/nushell ($nu.default-config-dir | path dirname)
 ls $nu.default-config-dir
 ```
 
-Close the terminal tab, open a new tab with zsh (we need to configure the shell that launches Nushell).
+Close the terminal tab and open a new tab with zsh (we need to configure the shell that launches Nushell).
 
 ## Configuring XDG_CONFIG_HOME
 
@@ -77,7 +77,7 @@ Add the environment variable to zsh configuration (zsh is the default macOS shel
 code ~/.zshrc
 ```
 
-If the `code` command is not found: open VS Code, press `Cmd+Shift+P`, type `install path`, select the install command, press Enter. Then repeat `code ~/.zshrc` in the terminal.
+If the `code` command is not found, open VS Code, press `Cmd+Shift+P`, type `install path`, select the install command, press Enter. Then repeat `code ~/.zshrc` in the terminal.
 
 In the opened file, add the line:
 
@@ -141,6 +141,9 @@ nu
 # Open main configuration file
 config nu
 ```
+
+> [!NOTE]
+> Author suggests installing [nushell-language-vscode-extension](https://marketplace.visualstudio.com/items?itemName=TheNuProjectContributors.vscode-nushell-lang)
 
 Add history and banner settings:
 
