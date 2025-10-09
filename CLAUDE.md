@@ -40,6 +40,14 @@ When adding or modifying manuals:
 - Include "What's Next?" sections to guide readers forward
 - Avoid unnecessary complexity or advanced configurations for beginner content
 
+### Language and Editing
+
+The author is a non-native English speaker. When reviewing or editing content:
+- Proactively check for grammar, spelling, and clarity issues
+- Rephrase awkward or unclear sentences while preserving the author's intent
+- Suggest improvements to make technical content more accessible
+- Fix articles (a/an/the), prepositions, and verb tense issues common to non-native speakers
+
 ## License
 
 This repository uses the Unlicense (public domain).
