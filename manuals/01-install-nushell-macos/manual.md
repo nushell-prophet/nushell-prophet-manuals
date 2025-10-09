@@ -21,14 +21,14 @@ After execution, copy the commands provided by Homebrew (as shown in the image).
 
 Paste the provided commands into the terminal and execute them.
 
-```bash
+```
 # Verify the installation
 brew doctor
 ```
 
 ## Installing Nushell
 
-```bash
+```
 # View package information
 brew info nushell
 
@@ -43,13 +43,13 @@ nu
 
 Check the current configuration path:
 
-```nu
+```
 $nu.default-config-dir
 ```
 
 If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths, improves compatibility with terminal quick-select features, and provides other convenience benefits that the author has learned from experience.
 
-```nu
+```
 # Launch nu without saving history (this prevents recreating the config folder during the move)
 nu --no-history
 
@@ -76,7 +76,7 @@ Close the terminal tab and open a new tab with zsh (we need to configure the she
 
 Add the environment variable to zsh configuration (zsh is the default macOS shell, so setting it here ensures it's available when launching Nushell):
 
-```bash
+```
 # Open zsh configuration in VS Code
 code ~/.zshrc
 ```
@@ -87,7 +87,7 @@ In the opened file, add the line:
 
 `export XDG_CONFIG_HOME="$HOME/.config"`
 
-```bash
+```
 # Apply changes
 source ~/.zshrc
 
@@ -95,7 +95,7 @@ source ~/.zshrc
 echo $XDG_CONFIG_HOME
 ```
 
-```nu
+```
 # Launch nushell again
 nu
 
@@ -105,7 +105,7 @@ $nu.default-config-dir
 
 ## Initializing Git Repository
 
-```bash
+```
 # Navigate to configuration directory
 cd ~/.config/
 
@@ -125,14 +125,14 @@ git commit -m "Initial nushell configuration"
 
 ## Basic Settings
 
-```nu
+```
 # Open environment variables file
 config env
 ```
 
 If the `$env.EDITOR` variable is not set, set it by running this command:
 
-```nu
+```
 $env.EDITOR = "code"
 ```
 
@@ -140,7 +140,7 @@ Then run `config env` again and add the same line to your `env.nu` file to make 
 
 Save the file and restart Nushell:
 
-```nu
+```
 nu
 
 # Open main configuration file
@@ -152,7 +152,7 @@ config nu
 
 Add history and banner settings:
 
-```nu
+```
 $env.config.history.file_format = "sqlite"
 $env.config.history.max_size = 5_000_000
 $env.config.show_banner = false
@@ -160,7 +160,7 @@ $env.config.show_banner = false
 
 Save the file.
 
-```nu
+```
 # restart nushell
 nu
 
@@ -172,7 +172,7 @@ cd ~/.config/
 
 Commit changes:
 
-```nu
+```
 # See what changed
 git status
 
@@ -186,7 +186,7 @@ git status
 
 We see that history files remain. Create `.gitignore`:
 
-```bash
+```
 # Open .gitignore in editor
 code .gitignore
 ```
@@ -195,7 +195,7 @@ Add the line: `nushell/history*`
 
 Save and commit:
 
-```nu
+```
 # Verify that history files are no longer shown
 git status
 
