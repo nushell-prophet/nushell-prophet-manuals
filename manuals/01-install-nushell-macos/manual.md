@@ -43,7 +43,7 @@ Check the current configuration path:
 $nu.default-config-dir
 ```
 
-If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths (which require extra quoting), improves compatibility with terminal quick-select features, and provides other convenience benefits:
+If the path contains spaces (which it does by default on macOS), follow these instructions to relocate the configuration. This avoids issues when copy-pasting paths, improves compatibility with terminal quick-select features, and provides other convenience benefits that the author has learned from experience.
 
 ```nu
 # Launch nu without saving history (this prevents recreating the config folder during the move)
