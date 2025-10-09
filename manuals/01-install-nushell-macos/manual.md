@@ -17,7 +17,7 @@ Open Terminal, paste the command, press Enter.
 
 After execution, copy the commands provided by Homebrew (as shown in the image).
 
-![](media/brew-post-install.png)
+<img src="media/brew-post-install.png" width="600" alt="Homebrew post-install commands">
 
 Paste the provided commands into the terminal and execute them.
 
