@@ -1,4 +1,4 @@
-# Installing Nushell from Scratch on MacOS Tahoe
+# Installing Nushell from Scratch on macOS Tahoe
 
 ## Foreword
 
