@@ -1,6 +1,6 @@
 # Nushell Prophet Manuals on Nushell
 
-- [Install Nushell on macOS Tahoe](manuals/01-install-nushell-macos/manual.md)
+1. [Install Nushell on macOS Tahoe from scratch](manuals/01-install-nushell-macos/manual.md)
     - Install VS Code
     - Install Homebrew
     - Install Nushell
