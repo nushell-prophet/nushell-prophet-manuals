@@ -109,6 +109,10 @@ $nu.default-config-dir
 # Navigate to configuration directory
 cd ~/.config/
 
+# Set username and email (replace with your own name and email)
+git config --global user.name "Maxim Uvarov"
+git config --global user.email "nushell-prophet-demo@users.noreply.github.com"
+
 # Initialize git
 git init
 
@@ -117,13 +121,6 @@ git add nushell/config.nu nushell/env.nu
 
 # Create first commit
 git commit -m "Initial nushell configuration"
-
-# Set username and email (replace with your own name and email)
-git config --global user.name "Maxim Uvarov"
-git config --global user.email "nushell-prophet-demo@users.noreply.github.com"
-
-# Edit the author of the last commit
-git commit --amend --reset-author
 ```
 
 ## Basic Settings
