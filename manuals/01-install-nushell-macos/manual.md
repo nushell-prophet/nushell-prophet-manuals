@@ -142,6 +142,9 @@ nu
 config nu
 ```
 
+> [!NOTE]
+> Author suggests installing [nushell-language-vscode-extension](https://marketplace.visualstudio.com/items?itemName=TheNuProjectContributors.vscode-nushell-lang)
+
 Add history and banner settings:
 
 ```nu
