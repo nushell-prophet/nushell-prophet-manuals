@@ -206,7 +206,8 @@ git commit -m "Add history files to gitignore"
 
 ## What's Next?
 
-Congratulations! You've successfully set up Nushell with a clean, professional configuration. Your setup now includes:
+Congratulations! You've successfully set up Nushell with a clean, solid foundation you can build on. Your setup now includes:
+
 - A space-free configuration path for smooth workflow
 - XDG_CONFIG_HOME properly configured
 - Git version control to track and experiment with your configuration safely
