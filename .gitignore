@@ -1,1 +1,6 @@
 .claude/settings.local.json
+
+# sound files
+*.wav
+*.mp3
+*.aiff
