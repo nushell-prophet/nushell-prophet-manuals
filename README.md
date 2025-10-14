@@ -18,3 +18,14 @@ While many configuration steps seem obvious to experienced developers, they can 
     - Configure XDG_CONFIG_HOME
     - Initialize Git Repository
     - Basic Settings
+
+2. [Install Claude Code on macOS](manuals/02-install-claude-code-macos/manual.md) *(Optional)*
+    - Installing Node.js
+    - Installing Claude Code
+    - Verifying installation with `/doctor`
+    - Installing VS Code extension
+
+3. [macOS Tweaks for Terminal Users](manuals/03-macos-tweaks-01/manual.md)
+    - Terminal Settings
+    - macOS Settings Through Terminal
+    - Finder Settings
