@@ -4,7 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a documentation repository containing Nushell manuals and tutorials. The content is educational material aimed at helping users learn Nushell, a modern shell written in Rust.
+This is a documentation repository containing Nushell manuals and tutorials for the [@nushell-prophet YouTube channel](https://www.youtube.com/@nushell-prophet). The content is educational material aimed at helping users learn Nushell, a modern shell written in Rust.
+
+### Channel Mission
+
+The channel focuses on:
+- **Documenting practical Nushell use cases** and showcasing terminal workflows
+- **Step-by-step beginner manuals** that follow a sequential learning path
+- **Related terminal tools** (wezterm, zellij, lazygit, Claude Code, etc.) to help beginners reproduce a complete development environment
+- **Advanced content** for experienced users interested in exploring Nushell capabilities
+
+### Content Structure
+
+- **Numbered manuals** (01, 02, 03, etc.) are designed for absolute beginners and follow a sequential learning path
+- **Other videos/tutorials** target users already familiar with Nushell or those interested in specific advanced topics
+- **Setup/prerequisite content** (macOS configuration, terminal tools) ensures beginners can replicate the environment and follow along with Nushell tutorials
 
 ## Structure
 
