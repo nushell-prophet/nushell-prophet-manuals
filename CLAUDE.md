@@ -11,7 +11,10 @@ This is a documentation repository containing Nushell manuals and tutorials. The
 - **manuals/** - Contains numbered tutorial manuals, each in its own subdirectory
   - Each manual lives in a folder like `01-install-nushell-macos/`
   - The actual content is in `manual.md` within each folder
+  - YouTube descriptions are stored in `youtube-description.md` within each folder
+  - Some manuals may include `video-narration.md` for video scripts
 - **README.md** - Table of contents listing all available manuals with bullet-point summaries
+- **YOUTUBE-DESCRIPTION-GUIDELINES.md** - Guidelines for creating YouTube video descriptions
 
 ## Content Guidelines
 
@@ -47,6 +50,16 @@ The author is a non-native English speaker. When reviewing or editing content:
 - Rephrase awkward or unclear sentences while preserving the author's intent
 - Suggest improvements to make technical content more accessible
 - Fix articles (a/an/the), prepositions, and verb tense issues common to non-native speakers
+
+### YouTube Descriptions
+
+Each manual that has an accompanying video should include a YouTube description:
+- Store in `youtube-description.md` within the manual's folder
+- Follow the guidelines in `YOUTUBE-DESCRIPTION-GUIDELINES.md`
+- Include links to the full manual on GitHub
+- Use emojis strategically for visual scanning
+- Include relevant hashtags for discoverability
+- Keep descriptions 150-300 words for optimal YouTube SEO
 
 ## License
 
