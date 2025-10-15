@@ -70,7 +70,9 @@ The author is a non-native English speaker. When reviewing or editing content:
 Each manual that has an accompanying video should include a YouTube description:
 - Store in `youtube-description.md` within the manual's folder
 - Follow the guidelines in `YOUTUBE-DESCRIPTION-GUIDELINES.md`
-- Include links to the full manual on GitHub
+- Place the full manual link immediately after the opening hook
+- Mention the manual link in the opening hook text
+- Do not include external links - all resources should be in the manual itself
 - Use emojis strategically for visual scanning
 - Include relevant hashtags for discoverability
 - Keep descriptions 150-300 words for optimal YouTube SEO

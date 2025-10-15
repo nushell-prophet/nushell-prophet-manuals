@@ -18,15 +18,29 @@ Start with a compelling 1-2 sentence introduction that:
 - Clearly states what the video covers
 - Indicates the target audience (e.g., "Perfect for beginners")
 - Highlights the value proposition
+- Mentions that the full manual link is in the description
 
 Example:
 ```
 Learn how to install and set up Nushell on macOS with this comprehensive
 step-by-step tutorial! Perfect for beginners who want to get started with
-this modern, powerful shell.
+this modern, powerful shell. Full manual link in the description below.
 ```
 
-### 2. What You'll Learn Section (Recommended)
+### 2. Full Manual Link (Required)
+Place the GitHub manual link immediately after the opening hook using the 📖 emoji:
+- This ensures the link is visible before "Show more" on YouTube
+- Makes it easy for viewers to follow along with the written manual
+- Encourages viewers to read the comprehensive documentation
+
+Example:
+```
+📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/01-install-nushell-macos/manual.md
+```
+
+**Important:** Do not include other external links (Node.js docs, official setup guides, etc.) in the YouTube description. All necessary links should be in the full manual, which we want to encourage viewers to read.
+
+### 3. What You'll Learn Section (Recommended)
 Use the 🔧 emoji followed by "What You'll Learn:" and bullet points listing:
 - Main topics covered
 - Key skills or knowledge gained
@@ -40,35 +54,24 @@ Example:
 - Installing Nushell via Homebrew
 ```
 
-### 3. Prerequisites Section (If Applicable)
+### 4. Prerequisites Section (If Applicable)
 Use the 📝 emoji followed by "Prerequisites:" and list:
 - Required OS/software versions
 - Prior knowledge needed (or state "No prior X experience needed!")
 - Hardware requirements if relevant
 
-### 4. Why/Context Section (Optional)
+### 5. Why/Context Section (Optional)
 Use the 💡 emoji to provide context:
 - Explain the reasoning behind certain choices
 - Highlight best practices being followed
 - Provide additional motivation for viewers
 
-### 5. Call-to-Action (Required)
+### 6. Call-to-Action (Required)
 Include standard engagement prompts:
 ```
 👍 Like this video if you found it helpful!
 🔔 Subscribe for more Nushell tutorials and shell scripting content!
 💬 Questions? Drop them in the comments below!
-```
-
-### 6. Links Section (Required)
-Include:
-- Link to the full manual on GitHub using the 📖 emoji
-- Any external resources mentioned in the video
-- Related videos or playlists (if applicable)
-
-Example:
-```
-📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/01-install-nushell-macos/manual.md
 ```
 
 ### 7. Hashtags (Required)
@@ -136,9 +139,11 @@ See these manuals for reference:
 
 Before publishing, verify:
 - [ ] Opening hook is compelling and clear
+- [ ] Opening hook mentions "Full manual link in the description below"
+- [ ] Full manual link is placed immediately after the opening hook
+- [ ] No external links are included (they should be in the manual itself)
 - [ ] All relevant sections are included
 - [ ] Link to GitHub manual is correct and uses main branch
-- [ ] External links are working
 - [ ] Hashtags are relevant
 - [ ] Grammar and spelling are correct
 - [ ] Emojis are used consistently
