@@ -1,4 +1,6 @@
-Learn how to install Claude Code CLI on macOS and add a powerful AI assistant to your terminal workflow! This optional tutorial shows you how to set up Claude Code, which can help troubleshoot terminal issues and answer questions as you learn Nushell.
+Learn how to install Claude Code CLI on macOS and add a powerful AI assistant to your terminal workflow! This optional tutorial shows you how to set up Claude Code, which can help troubleshoot terminal issues and answer questions as you learn Nushell. Full manual link in the description below.
+
+📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/02-install-claude-code-macos/manual.md
 
 🔧 What You'll Learn:
 - Installing Node.js using nvm (Node Version Manager)
@@ -18,9 +20,5 @@ While this manual is completely optional and not required for the Nushell series
 👍 Like this video if you found it helpful!
 🔔 Subscribe for more Nushell tutorials and shell scripting content!
 💬 Questions? Drop them in the comments below!
-
-📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/02-install-claude-code-macos/manual.md
-🔗 Node.js installation: https://nodejs.org/en/download
-🔗 Claude Code setup guide: https://docs.claude.com/en/docs/claude-code/setup
 
 #claudecode #ai #terminal #nushell #macos #tutorial #programming

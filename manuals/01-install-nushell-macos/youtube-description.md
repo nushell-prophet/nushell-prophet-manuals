@@ -1,4 +1,6 @@
-Learn how to install and set up Nushell on macOS with this comprehensive step-by-step tutorial! Perfect for beginners who want to get started with this modern, powerful shell.
+Learn how to install and set up Nushell on macOS with this comprehensive step-by-step tutorial! Perfect for beginners who want to get started with this modern, powerful shell. Full manual link in the description below.
+
+📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/01-install-nushell-macos/manual.md
 
 🔧 What You'll Learn:
 - Installing VS Code text editor
@@ -19,7 +21,5 @@ This tutorial follows battle-tested practices including using XDG_CONFIG_HOME fo
 👍 Like this video if you found it helpful!
 🔔 Subscribe for more Nushell tutorials and shell scripting content!
 💬 Questions? Drop them in the comments below!
-
-📖 Full manual: https://github.com/nushell-prophet/nushell-prophet-manuals/blob/main/manuals/01-install-nushell-macos/manual.md
 
 #nushell #macos #shell #terminal #tutorial #programming
