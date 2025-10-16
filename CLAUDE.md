@@ -20,6 +20,12 @@ The channel focuses on:
 - **Other videos/tutorials** target users already familiar with Nushell or those interested in specific advanced topics
 - **Setup/prerequisite content** (macOS configuration, terminal tools) ensures beginners can replicate the environment and follow along with Nushell tutorials
 
+### Related Repository
+
+The companion repository `/Users/user/git/nushell-show` (`nushell-show`) contains materials for random advanced videos on the same YouTube channel. Content decisions should consider which repository is more appropriate:
+- `nushell-prophet-manuals` (this repo): Comprehensive tutorials, step-by-step guides, foundational topics, beginner-focused sequential manuals
+- `nushell-show`: Quick demonstrations, advanced features, tool integrations, standalone advanced topics
+
 ## Structure
 
 - **manuals/** - Contains numbered tutorial manuals, each in its own subdirectory
