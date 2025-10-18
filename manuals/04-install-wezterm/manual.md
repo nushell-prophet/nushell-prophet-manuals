@@ -97,7 +97,7 @@ $env.PATH = [
 > [!NOTE]
 > Historically, environment variables like `$env.PATH` were configured in `env.nu`. However, for this use case, we're placing it in `config.nu` at the beginning of the file. Both approaches work, but using `config.nu` is the recommended approach for modern Nushell.
 
-Save the file, then close and relaunch WezTerm. Verify that `code` now works correctly.
+Save the file, then close and relaunch WezTerm. Verify that `code` now opens VS Code correctly.
 
 ## What's Next?
 
