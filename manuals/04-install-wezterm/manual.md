@@ -74,7 +74,7 @@ $env.PATH
 | to nuon --indent 4
 ```
 
-Copy the result from this command.
+This shows you the current PATH from Terminal.app, which you can use as a reference.
 
 Now open your Nushell configuration file `config.nu`:
 
@@ -82,22 +82,29 @@ Now open your Nushell configuration file `config.nu`:
 config nu
 ```
 
-At the beginning of the `config.nu` file, assign the `$env.PATH` variable to the value you just copied. For example:
+At the beginning of the `config.nu` file, add the following code to configure `$env.PATH`. This robust approach builds on the existing PATH, adds necessary directories, filters out non-existent paths, and removes duplicates:
 
 ```nu
-$env.PATH = [
-    "/opt/homebrew/bin",
-    "/usr/local/bin",
-    "/usr/bin",
-    "/bin",
-    # ... your paths here
-]
+$env.PATH = (
+    $env.PATH
+    | split row (char esep)
+    | append [
+        "/opt/homebrew/bin"
+        "/usr/local/bin"
+        "/usr/bin"
+        "/bin"
+        # ... your paths here
+    ]
+    | str trim
+    | where {|i| $i | path exists }
+    | uniq
+)
 ```
 
 > [!NOTE]
 > Historically, environment variables like `$env.PATH` were configured in `env.nu`. However, for this use case, we're placing it in `config.nu` at the beginning of the file. Both approaches work, but using `config.nu` is the recommended approach for modern Nushell.
 
-Save the file, then close and relaunch WezTerm. Verify that `code` now opens VS Code correctly.
+Save the file, then close and relaunch WezTerm. Verify that `code` now opens VS Code application.
 
 ## What's Next?
 
