@@ -29,3 +29,8 @@ While many configuration steps seem obvious to experienced developers, they can 
     - Terminal Settings
     - macOS Settings Through Terminal
     - Finder Settings
+
+4. [Installing WezTerm Terminal on macOS](manuals/04-install-wezterm/manual.md)
+    - Installing WezTerm
+    - Configuring WezTerm to Launch Nushell by Default
+    - Setting the $env.PATH Variable
