@@ -62,19 +62,39 @@ Save the file in VS Code.
 
 Close and relaunch WezTerm. It should now start with Nushell as the default shell.
 
-## Setting $env.PATH variable
+## Setting the $env.PATH Variable
 
-But, mind, that Nushell now doesn't know about the PATH. For example, if we execute `code`, we'll get an error.
+Note that when WezTerm launches Nushell directly, it doesn't inherit the PATH environment variable from your shell's configuration files. For example, if you try to execute `code`, you'll get an error.
 
-Let's fix that. In the Terminal.app, execute the command:
+Let's fix that. In Terminal.app, execute the following command:
 
+```nu
+$env.PATH
+| split row (char esep)
+| to nuon --indent 4
 ```
-    $env.PATH
-    | split row (char esep)
-    | to nuon --indent 4
+
+Copy the result from this command.
+
+Now open your Nushell configuration file `config.nu`:
+
+```nu
+config nu
 ```
 
-copy the result. And in your `config.nu` assign the variable `$env.PATH` to the value that we copyied.
+At the beginning of the `config.nu` file, assign the `$env.PATH` variable to the value you just copied. For example:
+
+```nu
+$env.PATH = [
+    "/opt/homebrew/bin",
+    "/usr/local/bin",
+    "/usr/bin",
+    "/bin",
+    # ... your paths here
+]
+```
+
+Save the file, then close and relaunch WezTerm. Verify that `code` now works correctly.
 
 ## What's Next?
 
