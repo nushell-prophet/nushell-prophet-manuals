@@ -19,7 +19,7 @@ defaults write com.apple.dock persistent-apps -array
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 # Set initial key repeat delay
-defaults write -g InitialKeyRepeat -int 30
+defaults write -g InitialKeyRepeat -int 30 # in the first video, I used 10 here, but I found that it is too fast for me to use.
 ```
 
 ## Finder Settings
