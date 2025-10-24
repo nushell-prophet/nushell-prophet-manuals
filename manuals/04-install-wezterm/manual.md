@@ -24,11 +24,21 @@ cd ~/.config/
 # Create wezterm directory
 mkdir wezterm
 
+# Note: If you have ~/.wezterm.lua from a previous installation, move it here
+# as wezterm.lua (without the dot), since ~/.wezterm.lua takes precedence.
+# You can do so with command `mv ~/.wezterm.lua ~/.config/wezterm/wezterm.lua`
+
+# Navigate to wezterm's config directory
+cd wezterm
+
 # Open wezterm.lua in VS Code
 code wezterm.lua
 ```
 
-In the `wezterm.lua` file that just opened in VS Code, paste the following configuration: 
+In the `wezterm.lua` file that just opened in VS Code, paste the following configuration:
+
+> [!NOTE]
+> In the accompanying video, I demonstrate adding this configuration by chunks to show how each setting affects WezTerm's behavior. However, you can paste the entire configuration at once to get the ready result.
 
 ```lua
 -- Load the wezterm module
@@ -42,6 +52,8 @@ config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 
 -- Set Nushell as the default shell
+-- This path is standard for Mac with Apple Silicon
+-- To find the path on your system, run `which nu` in Terminal.app
 config.default_prog = {'/opt/homebrew/bin/nu'}
 
 -- Get the home directory (works on both macOS and Windows)
