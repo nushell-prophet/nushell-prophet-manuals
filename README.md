@@ -39,5 +39,3 @@ While many configuration steps seem obvious to experienced developers, they can 
     - What Are Quick Select Patterns?
     - Configuring Quick Select Patterns
     - Using Quick Select
-    - Understanding the Patterns
-    - Customizing Patterns
