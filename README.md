@@ -1,5 +1,7 @@
 # Prophet's Guide to Nushell
 
+Learn Nushell and set up Prophet's environment (WezTerm, Zellij, Helix, Claude Code)
+
 ## About These Manuals
 
 The best place to start learning Nushell is the official [Nushell Book](https://www.nushell.sh/book/)—it's exceptionally well-written, actively maintained, and always up to date.
