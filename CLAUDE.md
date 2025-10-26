@@ -70,6 +70,7 @@ The author is a non-native English speaker. When reviewing or editing content:
 - Rephrase awkward or unclear sentences while preserving the author's intent
 - Suggest improvements to make technical content more accessible
 - Fix articles (a/an/the), prepositions, and verb tense issues common to non-native speakers
+- Occasionally provide brief, helpful style explanations when making edits (e.g., "Oxford comma for clarity", "possessive vs. contraction"), but keep them concise and not too frequent
 
 ### YouTube Descriptions
 

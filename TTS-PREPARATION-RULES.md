@@ -9,6 +9,13 @@ This document contains rules for preparing video narration text for TTS engines 
 - `macOS` → `mac-O-S`
 - `VS Code` → `V S Code` (with spaces between letters)
 - `SQLite` → `S-Q-L-ite`
+- `Homebrew` → `Homebrew` (keep capitalized - it's a product name)
+
+### Extension names follow the same pattern:
+- `nushell-lang` extension → `New-shell-lang` (VS Code extension)
+
+### Application names:
+- `Terminal.app` → `Terminal app` (when referring to the macOS Terminal application in prose)
 
 ## 2. URLs and Domains
 
@@ -32,13 +39,13 @@ This document contains rules for preparing video narration text for TTS engines 
 - `config.nu` → `config-dot-nu`
 - `.gitignore` → `dot-gitignore`
 - `.zshrc` → `dot-zshrc`
+- `wezterm.lua` → `wezterm-dot-lua`
 
 ## 5. File Paths
 
 ### Spell out path components:
 - `~/.config/nushell` → `tilde-slash-dot-config-slash-nushell`
 - `~/` → `tilde slash`
-- `/path/to/file` → `slash path slash to slash file`
 
 ## 6. Command-Line Flags and Options
 
@@ -89,7 +96,7 @@ This document contains rules for preparing video narration text for TTS engines 
 
 ## 10. Environment Variables
 
-### In prose (lowercase for readability):
+### In prose (lowercase with hyphens for readability):
 - `XDG_CONFIG_HOME` → `xdg-config-home` (when mentioned in regular text)
 - Keep uppercase in actual commands: `dollar XDG_CONFIG_HOME`
 
@@ -152,6 +159,24 @@ For video narration files:
 - Keep commands as plain text (no special formatting)
 - Apply all phonetic transformations from rules above
 
+## 15. Narration Style Conventions
+
+### Consistency in writing:
+- Use contractions consistently: prefer `I'll` over mixing `I will` and `I'll`
+- Avoid starting sentences with `And` - use `Now`, `Then`, `Next` instead
+- Use proper articles: `the`, `a`, `an` where appropriate
+- Distinguish `its` (possessive) from `it's` (contraction of "it is")
+
+### Natural phrasing:
+- `Just for test` → `Just as a test` (correct idiom)
+- `Nevermind` → `Don't worry about` (more conversational)
+- `we might use` → `we could use` (more natural)
+- `as you see this` → `as you can see` (standard phrasing)
+
+### Clarity:
+- Use Oxford comma in lists of three or more items for clarity
+- Example: `copy, paste, and save` (not `copy, paste and save`)
+
 ## Quick Reference Checklist
 
 Before finalizing TTS narration text, verify:
@@ -163,8 +188,13 @@ Before finalizing TTS narration text, verify:
 - [ ] All tildes replaced with "tilde"
 - [ ] All markdown syntax removed
 - [ ] All special characters spelled out in commands
-- [ ] Product names (Nushell, macOS, VS Code, SQLite) converted
+- [ ] Product names (Nushell, macOS, VS Code, SQLite, Homebrew) converted
+- [ ] Extension names (nushell-lang → New-shell-lang) converted
 - [ ] File paths fully spelled out with slash separators
+- [ ] Quotes removed from around commands in narration
+- [ ] Contractions used consistently (I'll, we'll, etc.)
+- [ ] Oxford commas used for clarity
+- [ ] Articles (the, a, an) used properly
 
 ## Testing
 
