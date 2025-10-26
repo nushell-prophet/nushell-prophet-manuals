@@ -34,3 +34,10 @@ While many configuration steps seem obvious to experienced developers, they can 
     - Installing WezTerm
     - Configuring WezTerm to Launch Nushell by Default
     - Setting the $env.PATH Variable
+
+5. [Setting Up Quick Select Patterns in WezTerm](manuals/05-setup-quick-select-patterns-in-wezterm/manual.md)
+    - What Are Quick Select Patterns?
+    - Configuring Quick Select Patterns
+    - Using Quick Select
+    - Understanding the Patterns
+    - Customizing Patterns
