@@ -2,7 +2,7 @@
 
 ## Foreword
 
-I started using WezTerm back in 2022. I chose it over Alacritty because it supported tabs out of the box. Even though I don't use WezTerm's tabs anymore (as I use Zellij for multiplexing sessions), there is one feature I can't live without: **quick select patterns**.
+I started using WezTerm back in 2022. I chose it over Alacritty because it supported tabs out of the box. Even though I don't use WezTerm's tabs anymore (as I use Zellij for multiplexing sessions), there is one feature I can't live without: [quick select patterns](https://wezterm.org/quickselect.html).
 
 This manual will show you how to configure WezTerm's quick select patterns to work seamlessly with Nushell's structured output. You'll learn what quick select patterns are, why they're useful, and how to set them up specifically for Nushell workflows.
 
