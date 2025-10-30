@@ -1,3 +1,8 @@
+---
+youtube: https://youtu.be/Kr6KFxZbGJ8
+telegram: https://t.me/nushellprophet/11
+---
+
 ## Foreword
 
 > [!NOTE]

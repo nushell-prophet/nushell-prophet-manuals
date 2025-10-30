@@ -1,3 +1,8 @@
+---
+youtube: https://youtu.be/i4QoXLNQoRQ
+telegram: https://t.me/nushellprophet/10
+---
+
 # Installing Nushell from Scratch on MacOS Tahoe
 
 ## Foreword

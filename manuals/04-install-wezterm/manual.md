@@ -1,3 +1,8 @@
+---
+youtube: https://youtu.be/SazjhBb0d14
+telegram: https://t.me/nushellprophet/14
+---
+
 # Installing WezTerm Terminal on macOS
 
 ## Foreword

@@ -1,3 +1,8 @@
+---
+youtube: https://youtu.be/bDYWKEzYOpY
+telegram: https://t.me/nushellprophet/12
+---
+
 ## Foreword
 
 This manual isn't directly related to Nushell, but to make my life as a presenter more convenient and to share my expertise with total beginners, I decided to create this guide.
