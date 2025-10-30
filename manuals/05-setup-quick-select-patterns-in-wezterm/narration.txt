@@ -1,0 +1,23 @@
+Hello friends, in this video I'll show you a WezTerm feature that I simply cannot live without.
+Quick Select Mode is a mode where WezTerm highlights text patterns when you press Ctrl + Shift + Space, so you can quickly copy them.
+Let me show.
+I cd into my dot-config folder and run `git log`.
+So, we have several hashes here, I press Ctrl + Shift + Space, and the first letter of each hash changes to a selection key.
+I can choose one... here the letter R is highlighted, I type R, the hash is selected and copied to my clipboard.
+Now I can type `git show` and just paste the copied hash. This is convenient.
+Let's configure WezTerm so it can recognize column names and values in Nushell tables.
+How? From the manual, I copy the command to open the WezTerm configuration, then I copy the patterns, paste them here, save, and move to the next step.
+We open the Nushell configuration, but before copying and pasting the configuration from the manual, I'll show you what it will change.
+This is what a Nushell table looks like with the default configuration in the current version.
+If we paste our new configuration lines and launch a new Nushell instance, the table will look different:
+Instead of three rows, we'll have just one row, and we'll also get column names at the bottom of the table, which we don't have here.
+What does this give us? For example, I can output a table, then append `sort-by` to the pipeline, press Ctrl + Shift + Space, select a column name with F, and quickly paste it as an argument.
+I can also select the value of a cell in the table - all the values inside the table cells are now highlighted. I press C to copy the nushell folder name, and I can immediately use this value, for example, to run `ls nushell`.
+Here I can similarly select the filename NR, then run `open` on it and pipe it to `nu-highlight` to make the output prettier.
+What else do we already have configured in WezTerm? If I make an error in our config.nu file, save it and launch Nushell, scrolling up I'll see an error message like this. It has the path to the file and the row number and column number where the error occurred.
+I can press Ctrl + Shift + Space now to quickly copy this path for later use. I press Z.
+Let me close VS Code first so I can cleanly show you what we can do with the copied path.
+Now if I type `code -g` and paste the copied path with the line and column numbers, VS Code will open.
+And the cursor will be right at the error location. Let's remove the error now so that Nushell launches normally.
+Well, let's commit our changes with git commit -m Quick select patterns.
+Thanks for watching!

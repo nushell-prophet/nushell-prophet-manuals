@@ -1,3 +1,8 @@
+---
+youtube: https://youtu.be/UfM5GLvBQJ0
+telegram: https://t.me/nushellprophet/15
+---
+
 # Setting Up Quick Select Patterns in WezTerm
 
 ## Foreword
