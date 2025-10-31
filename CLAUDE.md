@@ -33,8 +33,11 @@ The companion repository `/Users/user/git/nushell-show` (`nushell-show`) contain
   - The actual content is in `manual.md` within each folder
   - YouTube descriptions are stored in `youtube-description.md` within each folder
   - Some manuals may include `video-narration.md` for video scripts
+- **claude-code-production-docs/** - Production workflow documentation for Claude Code
+  - `CLAUDE-CODE-TASK-INSTRUCTIONS.md` - Comprehensive guide for typical tasks and user preferences
+  - `TTS-PREPARATION-RULES.md` - Rules for preparing text for Text-to-Speech engines
+  - `YOUTUBE-DESCRIPTION-GUIDELINES.md` - Guidelines for creating YouTube video descriptions
 - **README.md** - Table of contents listing all available manuals with bullet-point summaries
-- **YOUTUBE-DESCRIPTION-GUIDELINES.md** - Guidelines for creating YouTube video descriptions
 
 ## Content Guidelines
 
@@ -63,26 +66,14 @@ When adding or modifying manuals:
 - Include "What's Next?" sections to guide readers forward
 - Avoid unnecessary complexity or advanced configurations for beginner content
 
-### Language and Editing
+### Supporting Files
 
-The author is a non-native English speaker. When reviewing or editing content:
-- Proactively check for grammar, spelling, and clarity issues
-- Rephrase awkward or unclear sentences while preserving the author's intent
-- Suggest improvements to make technical content more accessible
-- Fix articles (a/an/the), prepositions, and verb tense issues common to non-native speakers
-- Occasionally provide brief, helpful style explanations when making edits (e.g., "Oxford comma for clarity", "possessive vs. contraction"), but keep them concise and not too frequent
+Each manual may include:
+- **YouTube description**: `youtube-description.md` - Follow guidelines in `claude-code-production-docs/YOUTUBE-DESCRIPTION-GUIDELINES.md`
+- **Video narration**: `video-narration.md` - Follow TTS preparation rules in `claude-code-production-docs/TTS-PREPARATION-RULES.md`
+- **Media**: `media/` folder for screenshots and images
 
-### YouTube Descriptions
-
-Each manual that has an accompanying video should include a YouTube description:
-- Store in `youtube-description.md` within the manual's folder
-- Follow the guidelines in `YOUTUBE-DESCRIPTION-GUIDELINES.md`
-- Place the full manual link immediately after the opening hook
-- Mention the manual link in the opening hook text
-- Do not include external links - all resources should be in the manual itself
-- Use emojis strategically for visual scanning
-- Include relevant hashtags for discoverability
-- Keep descriptions 150-300 words for optimal YouTube SEO
+For detailed operational workflows and Claude Code task instructions, see `claude-code-production-docs/CLAUDE-CODE-TASK-INSTRUCTIONS.md`
 
 ## License
 
