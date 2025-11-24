@@ -27,6 +27,21 @@ While many configuration steps seem obvious to experienced developers, they can 
     - Verifying installation with `/doctor`
     - Installing VS Code extension
 
+2a. [macOS & Terminal Security Awareness](manuals/02a-macos-terminal-security/manual.md) *(Highly Recommended)*
+    - Understanding macOS Security (SIP, Gatekeeper, Sandboxing)
+    - Software Installation Risks and Trust-Based Distribution
+    - Security Red Flags to Avoid Entirely
+    - Good Security Habits for Developers
+    - Nushell's Security Advantages
+
+2b. [AI Coding Assistants in the Terminal: Understanding the Risks](manuals/02b-ai-coding-assistants-security/manual.md) *(For AI Tool Users)*
+    - What Are AI Coding Assistants and Why They're Different
+    - The Security Hierarchy: Which Tools to Trust
+    - What AI Tools Can Access
+    - Risk Assessment Framework
+    - Practical Security Measures
+    - When to Avoid AI Tools Entirely
+
 3. [macOS Tweaks for Terminal Users](manuals/03-macos-tweaks-01/manual.md)
     - Terminal Settings
     - macOS Settings Through Terminal
