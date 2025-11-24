@@ -85,11 +85,7 @@ If you followed Manual 02, you also used this pattern to install `nvm`:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
-Again, `nvm` is trustworthy. But here's an important point: **even trustworthy tools can become gateways to riskier ecosystems.**
-
-`nvm` installs Node.js, which gives you access to npm — a package registry with millions of packages of wildly varying trustworthiness. This is the **cascading trust problem**: you trust Homebrew → which installs nvm → which installs Node → which gives you npm → which installs packages that might have dependencies of their own.
-
-Each layer multiplies your attack surface. You're not just trusting nvm; you're trusting everything nvm enables you to install downstream.
+Again, `nvm` is trustworthy. But `nvm` installs Node.js, which gives you access to npm — a package registry with millions of packages of wildly varying trustworthiness. Each tool you install can install other tools: Homebrew → nvm → Node → npm → packages → their dependencies. Each layer multiplies your attack surface.
 
 ---
 
