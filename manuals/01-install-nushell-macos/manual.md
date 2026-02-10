@@ -88,9 +88,15 @@ code ~/.zshrc
 
 If the `code` command is not found, open VS Code, press `Cmd+Shift+P`, type `install path`, select the install command, press Enter. Then repeat `code ~/.zshrc` in the terminal.
 
-In the opened file, add the line:
+In the opened in VS Code file, add the line:
 
-`export XDG_CONFIG_HOME="$HOME/.config"`
+```
+export XDG_CONFIG_HOME="$HOME/.config"
+```
+
+Save the file.
+
+In your terminal execute commands:
 
 ```
 # Apply changes
