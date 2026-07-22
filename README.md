@@ -56,3 +56,8 @@ While many configuration steps seem obvious to experienced developers, they can 
     - What Are Quick Select Patterns?
     - Configuring Quick Select Patterns
     - Using Quick Select
+
+6. [Installing Cozy into an `sbx` Sandbox](manuals/06-install-cozy/README.md)
+    - The three-command quick start
+    - What the installer does (kit file, `run-install.sh`, `bootstrap.nu`)
+    - Connecting to the sandbox and `cozy verify`

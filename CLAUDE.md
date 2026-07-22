@@ -20,17 +20,17 @@ The channel focuses on:
 - **Other videos/tutorials** target users already familiar with Nushell or those interested in specific advanced topics
 - **Setup/prerequisite content** (macOS configuration, terminal tools) ensures beginners can replicate the environment and follow along with Nushell tutorials
 
-### Related Repository
+### Related repositories
 
-The companion repository `/Users/user/git/nushell-show` (`nushell-show`) contains materials for random advanced videos on the same YouTube channel. Content decisions should consider which repository is more appropriate:
-- `nushell-prophet-manuals` (this repo): Comprehensive tutorials, step-by-step guides, foundational topics, beginner-focused sequential manuals
-- `nushell-show`: Quick demonstrations, advanced features, tool integrations, standalone advanced topics
+Sibling repos in the same workspace (checked out side by side):
+- `../nushell-show` — materials for advanced/standalone videos on the same channel. When placing content, decide which repo fits: this repo is comprehensive beginner-focused sequential manuals; `nushell-show` is quick demonstrations, advanced features, and tool integrations.
+- `../nushell-show-scratchpad` — the production scratchpad (transcripts, drafts, cover renders) shared by the channel's videos, including the planned cozy installation manual's working files.
 
 ## Structure
 
 - **manuals/** - Contains numbered tutorial manuals, each in its own subdirectory
   - Each manual lives in a folder like `01-install-nushell-macos/`
-  - The actual content is in `manual.md` within each folder
+  - The actual content is in `README.md` within each folder, so GitHub renders it when browsing the folder (older manuals still use `manual.md` and can be migrated on next edit)
   - YouTube descriptions are stored in `youtube-description.md` within each folder
   - Some manuals may include `video-narration.md` for video scripts
 - **claude-code-production-docs/** - Production workflow documentation for Claude Code
@@ -44,7 +44,7 @@ The companion repository `/Users/user/git/nushell-show` (`nushell-show`) contain
 ### Manual Organization
 
 Each manual should:
-- Be placed in `manuals/NN-descriptive-name/manual.md` format (where NN is a zero-padded number)
+- Be placed in `manuals/NN-descriptive-name/README.md` format (where NN is a zero-padded number)
 - Have clear section headings that match the structure outlined in README.md
 - Target beginners as the primary audience
 - Include practical, step-by-step instructions with code examples
