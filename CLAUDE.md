@@ -24,15 +24,14 @@ The channel focuses on:
 
 Sibling repos in the same workspace (checked out side by side):
 - `../nushell-show` — materials for advanced/standalone videos on the same channel. When placing content, decide which repo fits: this repo is comprehensive beginner-focused sequential manuals; `nushell-show` is quick demonstrations, advanced features, and tool integrations.
-- `../nushell-show-scratchpad` — the production scratchpad (transcripts, drafts, cover renders) shared by the channel's videos, including the planned cozy installation manual's working files.
+- `../nushell-show-scratchpad` — the production scratchpad (transcripts, drafts, cover renders) shared by the channel's videos. It is private, so all internal publishing for a manual — `youtube-description.md`, `video-narration.md`, telegram/reddit drafts — lives there, not here. The install manual's working files are under its `shows/008-cozy-install/`.
 
 ## Structure
 
 - **manuals/** - Contains numbered tutorial manuals, each in its own subdirectory
   - Each manual lives in a folder like `01-install-nushell-macos/`
   - The actual content is in `README.md` within each folder, so GitHub renders it when browsing the folder (older manuals still use `manual.md` and can be migrated on next edit)
-  - YouTube descriptions are stored in `youtube-description.md` within each folder
-  - Some manuals may include `video-narration.md` for video scripts
+  - This repo is public, so it holds only the how-to (`README.md`). Internal publishing — `youtube-description.md`, `video-narration.md`, platform drafts — lives in the `../nushell-show-scratchpad` repo, not here. (Older manuals `01`–`05` still carry those files inline; that predates this rule and will be cleaned up later.)
 - **claude-code-production-docs/** - Production workflow documentation for Claude Code
   - `CLAUDE-CODE-TASK-INSTRUCTIONS.md` - Comprehensive guide for typical tasks and user preferences
   - `TTS-PREPARATION-RULES.md` - Rules for preparing text for Text-to-Speech engines
@@ -69,9 +68,11 @@ When adding or modifying manuals:
 ### Supporting Files
 
 Each manual may include:
-- **YouTube description**: `youtube-description.md` - Follow guidelines in `claude-code-production-docs/YOUTUBE-DESCRIPTION-GUIDELINES.md`
-- **Video narration**: `video-narration.md` - Follow TTS preparation rules in `claude-code-production-docs/TTS-PREPARATION-RULES.md`
 - **Media**: `media/` folder for screenshots and images
+
+Internal publishing files live in the `../nushell-show-scratchpad` repo, not here (see *Related repositories*), but the guidelines in this repo still govern how they are written:
+- **YouTube description** (`youtube-description.md` in the scratchpad) - Follow guidelines in `claude-code-production-docs/YOUTUBE-DESCRIPTION-GUIDELINES.md`
+- **Video narration** (`video-narration.md` in the scratchpad) - Follow TTS preparation rules in `claude-code-production-docs/TTS-PREPARATION-RULES.md`
 
 For detailed operational workflows and Claude Code task instructions, see `claude-code-production-docs/CLAUDE-CODE-TASK-INSTRUCTIONS.md`
 
