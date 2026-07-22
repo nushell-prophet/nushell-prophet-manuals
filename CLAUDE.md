@@ -31,7 +31,8 @@ Sibling repos in the same workspace (checked out side by side):
 - **manuals/** - Contains numbered tutorial manuals, each in its own subdirectory
   - Each manual lives in a folder like `01-install-nushell-macos/`
   - The actual content is in `README.md` within each folder, so GitHub renders it when browsing the folder (older manuals still use `manual.md` and can be migrated on next edit)
-  - This repo is public, so it holds only the how-to (`README.md`). Internal publishing — `youtube-description.md`, `video-narration.md`, platform drafts — lives in the `../nushell-show-scratchpad` repo, not here. (Older manuals `01`–`05` still carry those files inline; that predates this rule and will be cleaned up later.)
+  - Each manual's `README.md`/`manual.md` carries YAML front-matter with `youtube:` and `telegram:` URL fields. Leave each empty until that video/post is live, then fill it (see manual 04 for the convention). These are published metadata, not drafts, so they belong here even though drafts do not.
+  - This repo is public, so it holds only the how-to (`README.md`). Internal publishing — `youtube-description.md`, `video-narration.md`, platform drafts — lives in the `../nushell-show-scratchpad` repo, not here. (The legacy beginner manuals `01`–`05` still carry those files inline; that predates this rule and will be cleaned up later. `02a`, `02b`, and `06` already follow the split.)
 - **claude-code-production-docs/** - Production workflow documentation for Claude Code
   - `CLAUDE-CODE-TASK-INSTRUCTIONS.md` - Comprehensive guide for typical tasks and user preferences
   - `TTS-PREPARATION-RULES.md` - Rules for preparing text for Text-to-Speech engines
